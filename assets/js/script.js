@@ -28,7 +28,7 @@ function playerAttack() {
   if (Roboto.health <= 0) {
     endGame("Congratulations! You defeated " + Roboto.name + "!");
   } else {
-    setTimeout(computerRobotAttack, 3000); // Delay Roboto's attack for 1 second
+    setTimeout(computerRobotAttack, 2500); // Delay Roboto's attack for 1 second
   }
 }
 
@@ -38,7 +38,8 @@ function computerRobotAttack() {
   player.health -= damage;
   updateResult(
     Roboto.name +
-      " attacked you. You now have " +
+      " attacked you." +
+      " You now have " +
       player.health +
       " health remaining."
   );
